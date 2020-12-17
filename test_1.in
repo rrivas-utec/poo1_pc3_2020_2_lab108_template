@@ -1,0 +1,19 @@
+#input
+    7
+    G Carga1 10
+    G Carga2 5
+    P Carga3 2 A
+    G Carga4 5
+    P Carga5 2 M
+    G Carga6 5
+    P Carga7 2 B
+#output
+    Carga1 10
+    Carga2 5
+    Carga3 2 A
+    Carga4 5
+    Carga5 2 M
+    Carga6 5
+    Carga7 2 B
+    Total = 31
+#endtest
