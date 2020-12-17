@@ -22,14 +22,16 @@ Practica Calificada # 3 del curso de Programación Orientada a Objetos 1
 ## Ejercicio #1 - Contenedor
 
 ### Problem Statement
+Escribir un programa que utilizando la clase **`carga`** y sus clases derivadas **`carga_general y carga_peligrosa`** genere un vector polimorfico, que permita almacenar **`n`** cargas, ingresando su tipo **(G=General y P=Peligrosa)** , descripción, peso y en el caso de carga peligrosa el nivel de peligrosidad **(A=Alta, M=Mediana y B=Baja)**, el programa debe de retornar  la lista y el peso total de todas las cargas, para lo cual el resultado debe obtenerse utilizando el operador sobrecargado **`<<`** en el vector polimorfico (ver diagrama):
 
-
-Escribir un programa que utilizando la clase **`carga`** y sus clases derivadas **`carga_general y carga_peligrosa`** genere un vector polimorfico, que permita almacenar **`n`** cargas, ingresando su tipo (G=General y P=Peligrosa) su descripción, peso y en caso de carga peligra su nivel de peligrosidad (A=Alta, M=Mediana y B=Baja), el programa debe de retornar el peso total de peso, para lo cual el resultado debe obtenerse utilizando el operador sobrecargado **`<<`** (ver diagrama)  :
+```cpp
+ostream& operator<<(ostream& out, vector<carga*> cargas);
+```
 
 ![carga](carga.png)
 
 ### Input Format
-```bash
+```cpp
     7
     G Carga1 10
     G Carga2 5
